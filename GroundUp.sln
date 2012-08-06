@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF8F7A9B-9074-4510-ABC9-F2EFE865ABA2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GroundUp", "src\GroundUp\GroundUp.csproj", "{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EF44ED5E-72E7-4DEA-9D1E-86C0B9BC5637} = {CF8F7A9B-9074-4510-ABC9-F2EFE865ABA2}
+	EndGlobalSection
+EndGlobal

@@ -1,12 +1,21 @@
 ﻿using System.Web.Mvc;
+using GroundUp.Infrastructure.Mvc;
 
 namespace GroundUp.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : GroundUpController
     {
         public ActionResult Index()
         {
-            return View();
+            return SinglePageView();
+        }
+        public ActionResult About()
+        {
+            return SinglePageView();
+        }
+        public ActionResult Contact()
+        {
+            return SinglePageView();
         }
     }
 }

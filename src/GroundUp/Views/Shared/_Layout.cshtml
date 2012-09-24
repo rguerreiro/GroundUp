@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html ng-app>
+<html ng-app="myapp">
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title</title>
@@ -34,19 +34,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="brand" href="#">Project name</a>
+                <a class="brand" href="@Url.SinglePageAction("Index", "Home")">Project name</a>
                 <div class="nav-collapse">
                     <ul class="nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li class="active"><a href="@Url.SinglePageAction("Index", "Home")">Home</a></li>
+                        <li><a href="@Url.SinglePageAction("About", "Home")">About</a></li>
+                        <li><a href="@Url.SinglePageAction("Contact", "Home")">Contact</a></li>
                     </ul>
                 </div>
                 <!--/.nav-collapse -->
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container" ng-view>
         @RenderBody()
     </div>
     <!-- /container -->
@@ -56,5 +56,7 @@
     <script src="@Url.Content("~/Scripts/jquery-1.7.2.min.js")"></script>
     <script src="@Url.Content("~/Scripts/bootstrap.min.js")"></script>
     <script src="@Url.Content("~/Scripts/angular-1.0.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/app/main.js")"></script>
+    <script src="@Url.Content("~/Scripts/app/controllers.js")"></script>
 </body>
 </html>
